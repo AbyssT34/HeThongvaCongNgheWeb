@@ -1,0 +1,61 @@
+#wrapper {
+  max-width: 1200px;
+  height: 290px;
+  border: 1px solid #000000;
+  background-color: rgba(248, 186, 51, 0.664);
+}
+
+#header {
+  height: 30px;
+  border-bottom: 1px solid #000000;
+}
+
+#menu {
+  height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+}
+
+#wp-content {
+  height: 200px;
+  display: flex;
+}
+
+#sidebar-right {
+  width: 30%;
+  box-sizing: border-box;
+  border-left: 1px solid #000000;
+}
+
+#content {
+  width: 70%;
+  box-sizing: border-box;
+}
+
+#article1 {
+  height: 70%;
+  width: 88%;
+  box-sizing: border-box;
+  margin-left: 30px;
+  border: 1px solid #000000;
+  background-color: blanchedalmond;
+}
+
+#article2 {
+  margin-top: 50px;
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #000000;
+  background-color: rgb(255, 205, 228);
+}
+
+#footer {
+  height: 30px;
+  border-top: 1px solid #000000;
+}
+
+p.left {
+  margin-left: 5px;
+  margin-top: 0px;
+}

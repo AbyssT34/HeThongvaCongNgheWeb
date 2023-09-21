@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> HomeWork 2 </title>
+		<style type="text/css" media="screen">
+			table {
+				border: 1px solid #ccc;
+			}
+			tr {
+				border: 1px solid #ccc;
+			}
+			tfoot{
+				background-color: #CAE00D;
+				text-align: center;
+			}
+			textarea{
+				height: 80px;
+				width: 85%;
+			}
+			input[type="text"]{
+				width: 90%;
+			}
+			
+			input[name="zipCode"]{
+				width: 70px;
+			}
+			input[name="country"]{
+				width: 100px;
+			}
+			 input[name="day"], input[name="month"], input[name="year"],
+			input[name="countryCode"], input[name="areaCode"], input[name="number"], input[name="state"]{
+				width: 50px;
+			}
+				input[name="city"]{
+				width: 185px;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			
+			<tbody>
+			<form method="post"action="#" >
+				<tr>
+				<td><label for="name" ><b>Last Name</b></label></td>
+				<td><input type="text" name="lastName"  placeholder="Nakov" value="" id="lastName"/></td>
+				</tr>
+					<td><label for="name"><b>First Name</b></label></td>
+					<td><input type="text" name="firstName" placeholder="Svetlin" value="" id="firstName"/></td>
+				<tr>
+					<td><label for="Addres"><b>Address</b></label></td>
+							<td>
+								<textarea id="Address">17 Hristo Botev Str. 
+									floor 3, apt. 12
+								</textarea>
+						</td>
+				
+				</tr>
+				<tr>
+					<td><label for="city"><b>City</b></label></td>
+					<td>
+						<input type="text" name="city" placeholder="Kaspichan" id="city"/>
+						<label for="state"><b>State</b></label>
+						<input type="text" name="state" value="" id="state"/>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="zipCode"><b>Zip/Postal Code</b></label></td>
+					<td><input type="text" name="zipCode" placeholder="9325" id="zipCode"/></td>
+				</tr>
+				<tr>
+					<td><label for="country"><b>Country</b></label></td>
+					<td>
+						<select name="country" id="country">
+							<option value="Bulgaria" selected="selected">Bulgaria</option>
+							
+						</select></td>
+				</tr>
+				<tr>
+					<td><label for="phone"><b>Phone(country code,
+							<br />
+							area code, number)</b></label></td>
+						<td> (+
+						<input type="text" name="countryCode" placeholder="359" id="phone"/>
+						)
+						<input type="text" name="areaCode" placeholder="88"/>
+						-
+						<input type="text" name="number" placeholder="8334343"/>
+						</td>
+				</tr>
+				<tr>
+					<td><label for="email"><b>Email</b></label></td>
+					<td><input type="email" name="email" placeholder="Nakov@kaspichan.org" id="email"/></td>
+				</tr>
+				<tr>
+						<td><b>Birth date</b></td>
+						<td><label for="month">Month</label>
+						<input type="text" name="month" placeholder="06" id="month" maxlength="2"/>
+						<label for="day">Day</label>
+						<input type="text" name="day" placeholder="14" id="day" maxlength="2"/>
+						<label for="year">Year</label>
+						<input type="text" name="year" placeholder="1980" id="year" maxlength="4"/>
+						</td>
+				</tr>
+				<tr>
+					<td><label for="gender"><b>Gender</b></label></td>
+						<td><select name="gender" id="gender">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><b>Starting Date</b></td>
+						<td>
+						<input type="radio" name="startingDate" id="summer" />
+						<label for="summer">Spring  2024</label>
+						<input type="radio" name="startingDate" id="spring"/>
+						<label for="spring">Summer 2024</label></td>
+				</tr>
+				<tr>
+					<td><label for="commentOrQuestion"><b>Comment/Question</b></label></td>
+					<td><textarea id="commentOrQuestion">Please send me more information about the lodging</textarea></td>
+				</tr>
+				<tfoot>
+					<tr>
+						<td colspan="2">
+							<input type="submit" value="Submit"/>
+							<input type="reset" value="Clear this form"/>
+						</td>
+					</tr>
+				</tfoot>
+			</form>
+		</tbody>
+	</body>
+</html>
